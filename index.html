@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Valentine</title>
+</head>
+<body>
+    <div id="content">
+        <h1 id="title">Will you be my valentine?</h1>
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXF5bGJzeDIwam01cDNnbmFrdG9pZ2Vud2MzMXZkZXdoaWNoYmRucSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9tZebYjE6ZhyfVpEac/giphy.gif" width="200" height="200" alt="GIF animé">
+        <div id="buttonGroup">
+            <button id="yes">Yes</button>
+            <button id="no" disabled>No</button>
+        </div>
+
+    </div>
+    
+    
+</body>
+<script>
+    document.getElementById('yes').addEventListener('click', function() {
+      // Création de l'URL mailto avec les paramètres d'e-mail
+      var email = "farley008@hotmail.com";  // Remplace par l'adresse e-mail destinataire
+      var subject = "U got yourself a valentine";
+      var body = "Wow, you actually managed to get somebody to accept being ur valentine!!!";
+  
+      // Redirige l'utilisateur vers le client mail avec un lien mailto
+      window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  
+      // Change la page après avoir ouvert le client mail
+      setTimeout(function() {
+        window.location.href = "thankyou.html";  // Remplace par la page où tu veux rediriger l'utilisateur
+      }, 1000);  // 1 seconde d'attente avant de rediriger
+    });
+  </script>
+</html>
