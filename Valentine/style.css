@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Great Vibes', cursive;
+    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnR3dGpxYnA2dm93NnVhNnZ5ZTFjeTFna2U5eno1Y2dkODhkZ3I4eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6gbeVN2ZPbG2COKA/giphy.gif'); /* Remplace par ton GIF */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#no:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#buttonGroup {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 25px 50px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#yes{
+    background-color: #28a745;
+    color: white;
+}
+
+#no{
+    background-color: #dc3545;
+    color: white;
+}
+
+#yes:hover {
+    background-color: #218838;
+}
+
+#no:hover {
+    background-color: #c82333;
+}
+#content {
+    width: 400px;
+    padding: 20px;
+   
+    border-radius: 8px;
+    text-align: center;
+  
+    /* Centrage total */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#title{
+    font-size: 60px;
+}
+#ty{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+   
+    border-radius: 8px;
+    text-align: center;
+}
+#thankyou{
+    font-size: 60px;
+}
